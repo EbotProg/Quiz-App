@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
+</head>
+<body>
+    
+    <header>
+        <!--
+        <h1 class="logo">Quiz App</h1>
+        -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Quiz App</a></h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="quizPage.html">Quiz</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="resultsPage.html">Results</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contactPage.html">Contacts</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!--
+        <nav>
+            <ul class="menu">
+                <li class="menu_items"> <a href="home.html">Home</a> </li>
+                <li class="menu_items"> <a href="quizPage.html">Quiz</a> </li>
+                <li class="menu_items"> <a href="resultsPage.html">Results</a> </li>
+                <li class="menu_items"> <a href="contactPage.html">Contacts</a> </li>
+            </ul>
+        </nav>
+        -->
+    </header>
+
+    <div class="banner">
+        <div class="main_img bg-secondary" style="width: 100%; height: 20rem;"></div>
+        <h2 style="position: absolute; left: 4rem; top: 10rem; background-color: red;">Welcome <span>Player X</span> </h2>
+    </div>
+
+    <main>
+        <div class="intro">
+            <h3 class="intro_title">Hi there!</h3>
+            <p class="intro_desc">This quiz app is going to help you get little knowledge about your subject of interest which include</p>
+            <ul class="intro_list">
+                <li class="intro_list_items">html</li>
+                <li class="intro_list_items">css</li>
+                <li class="intro_list_items">javascript</li>
+            </ul>
+        </div>
+
+<section class="info row">
+    <article class="home_info col">
+        <h4>Home</h4>
+        <p>This part....</p>
+    </article> 
+    
+    <article class="quiz_info col">
+        <h4>Quiz</h4>
+        <p>This page....</p>
+    </article>
+
+    <article class="result_info col">
+        <h4>Results</h4>
+        <p>This page......</p>
+    </article>
+
+    <article class="contact info col">
+        <h4>Contact</h4>
+        <p>This page........</p>
+    </article>
+</section>
+
+<section class="stats">
+    <div class="stat">
+        <p class="quiz_takers_txt" >Number of quiz takers</p>
+        <p class="quiz_takers_val" id="quiz_takers">+100</p>
+    </div>
+    <div class="stat">
+        <p class="highscore_txt">High Score</p>
+        <p class="highscore_val" id="high_score">20pts</p>
+    </div>
+    <div class="stat">
+        <p class="ave_score_txt">Average Score</p>
+        <p class="ave_score_val" id="average_score">15pts</p>
+    </div>
+</section>
+
+      <button onclick="window.location.href='quizPage.html'">Take a quiz</button>
+    </main> 
+
+    <footer>
+        <p>Copyright 2022</p>
+    </footer>
+    
+</body>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+</head>
+<body>
+    <a href="index.html">Go back home</a>
+    <h1>QUIZ</h1>
+    <div clas="info">
+        <form>
+            <label for="username">
+                <input type="text" name="username" id="username">
+            </label>
+            <input type="submit" id="submitName" onclick="addPlayer()">
+         </form>
+
+        <form>
+            <label for="language">Select the language</label>
+            <select name="language" id="language" onchange="displayLanguage()">  
+                <option value="html">Html</option>
+                <option value="css">Css</option>
+                <option value="javascript">Javascript</option>
+        </select>
+        </form>
+    </div>
+
+    <section class="html_questions" id="html_questions">
+        <h2>HTML</h2>
+    <div class="mcqs">
+        <h4>MCQs</h4>
+        <form>
+            <div class="question1">
+            <p>Which one of these is a semantic tag:</p>
+            <input type="radio" name="q1" id="q1_opt1" value="a"> 
+            <label for="q1_opt1">&lt;a&gt;</label>
+            <input type="radio" name="q1" id="q1_opt2" value="article">
+            <label for="q1_opt2">&lt;article&gt;</label>
+            <input type="radio" name="q1" id="q1_opt3" value="p">
+            <label for="q1_opt3">&lt;p&gt;</label>
+            <input type="radio" name="q1" id="q1_opt4" value="div">
+            <label for="q1_opt4">&lt;div&gt;</label>
+            <input type="radio" name="q1" id="q1_opt5" value="h1">
+            <label for="q1_opt5">&lt;h1&gt;</label>
+            </div>
+
+            <div class="question2">
+                <p>2. Which of these is the right syntax for
+                    a paragraph tag
+                </p>
+                <input type="radio" name="q2" id="q2_opt1" value="para"> 
+                <label for="q2_opt1">&lt;para&gt;</label>
+                <input type="radio" name="q2" id="q2_opt2" value="paragraph">
+                <label for="q2_opt2">&lt;paragraph&gt;</label>
+                <input type="radio" name="q2" id="q2_opt3" value="p">
+                <label for="q2_opt3">&lt;p&gt;</label>
+                <input type="radio" name="q2" id="q2_opt4" value="div">
+                <label for="q2_opt4">&lt;P&gt;</label>
+                <input type="radio" name="q2" id="q2_opt5" value="h1">
+                <label for="q2_opt5">&lt;pg&gt;</label>
+                
+             
+                <div class="question3">
+                    <p>3. Each element must have unique</p>
+                    <input type="radio" name="q3" id="q3_opt1" value="class"> 
+                    <label for="q3_opt1">class</label>
+                    <input type="radio" name="q3" id="q3_opt2" value="id">
+                    <label for="q3_opt2">id</label>
+                    <input type="radio" name="q3" id="q3_opt3" value="href">
+                    <label for="q3_opt3">href</label>
+                    <input type="radio" name="q3" id="q3_opt4" value="src">
+                    <label for="q3_opt4">src</label>
+                    <input type="radio" name="q3" id="q3_opt5" value="name">
+                    <label for="q3_opt5">name</label>
+                    </div>
+                    
+                    <div class="question4">
+                        <p>4. To link a javascript file to your html file, use the tag</p>
+                        <input type="radio" name="q4" id="q4_opt1" value="a"> 
+                        <label for="q4_opt1">&lt;a&gt;</label>
+                        <input type="radio" name="q4" id="q4_opt2" value="article">
+                        <label for="q4_opt2">&lt;article&gt;</label>
+                        <input type="radio" name="q4" id="q4_opt3" value="p tag">
+                        <label for="q4_opt3">&lt;p&gt;</label>
+                        <input type="radio" name="q4" id="q4_opt4" value="js">
+                        <label for="q4_opt4">&lt;js&gt;</label>
+                        <input type="radio" name="q4" id="q4_opt5" value="script">
+                        <label for="q4_opt5">&lt;script&gt;</label>
+                        </div>
+                   
+                        <div class="question5">
+                            <p>5. What does HTML mean?</p>
+                            <input type="radio" name="q5" id="q5_opt1" value="Hyper Text Markup Language"> 
+                            <label for="q5_opt1">Hyper Text Markup Language</label>
+                            <input type="radio" name="q5" id="q5_opt2" value="Home Tool Markup Language">
+                            <label for="q5_opt2">Home Tool Markup Language</label>
+                            <input type="radio" name="q5" id="q5_opt3" value="Hyperlinks and Text Markup Language">
+                            <label for="q5_opt3">Hyperlinks and Text Markup Language</label>
+                            <input type="radio" name="q5" id="q5_opt4" value="Hyper Text Multi-Language">
+                            <label for="q5_opt4">Hyper Text Multi-Language</label>
+                            <input type="radio" name="q5" id="q5_opt5" value="Hyper Text Message Language">
+                            <label for="q5_opt5">Hyper Text Message Language</label>
+                            </div>
+                   
+                            <div class="question6">
+                                <p>6.Which of the following are heading tags </p>
+                                <input type="checkbox" name="q6" id="q6_opt1" value="body"> 
+                                <label for="q6_opt1">&lt;body&gt;</label>
+                                <input type="checkbox" name="q6" id="q6_opt2" value="h1">
+                                <label for="q6_opt2">&lt;h1&gt;</label>
+                                <input type="checkbox" name="q6" id="q6_opt3" value="p">
+                                <label for="q6_opt3">&lt;p&gt;</label>
+                                <input type="checkbox" name="q6" id="q6_opt4" value="h6">
+                                <label for="q6_opt4">&lt;h6&gt;</label>
+                                <input type="checkbox" name="q6" id="q6_opt5" value="H1">
+                                <label for="q6_opt5">&lt;H1&gt;</label>
+                                </div>
+                   
+                                <div class="question7">
+                                    <p>7. The following are semantic tags </p>
+                                    <input type="checkbox" name="q7" id="q7_opt1" value="form"> 
+                                    <label for="q7_opt1">&lt;form&gt;</label>
+                                    <input type="checkbox" name="q7" id="q7_opt2" value="table">
+                                    <label for="q7_opt2">&lt;table&gt;</label>
+                                    <input type="checkbox" name="q7" id="q7_opt3" value="p">
+                                    <label for="q7_opt3">&lt;p&gt;</label>
+                                    <input type="checkbox" name="q7" id="q7_opt4" value="figcaption">
+                                    <label for="q7_opt4">&lt;figcaption&gt;</label>
+                                    <input type="checkbox" name="q7" id="q7_opt5" value="None of the above">
+                                    <label for="q7_opt5">None of the above</label>
+                                    </div>
+                                   
+                                    <div class="question8">
+                                        <p>8.Choose the correct HTML elements </p>
+                                        <input type="checkbox" name="q8" id="q8_opt1" value="click"> 
+                                        <label for="q8_opt1">&lt;click&gt;</label>
+                                        <input type="checkbox" name="q8" id="q8_opt2" value="mark">
+                                        <label for="q8_opt2">&lt;mark&gt;</label>
+                                        <input type="checkbox" name="q8" id="q8_opt3" value="details">
+                                        <label for="q8_opt3">&lt;details&gt;</label>
+                                        <input type="checkbox" name="q8" id="q8_opt4" value="strong">
+                                        <label for="q8_opt4">&lt;strong&gt;</label>
+                                        <input type="checkbox" name="q8" id="q8_opt5" value="all of the above">
+                                        <label for="q8_opt5">all of the above</label>
+                                        </div>
+                   
+                                        
+                                        <div class="question9">
+                                            <p>9. Choose the correct html attributes</p>
+                                            <input type="checkbox" name="q9" id="q9_opt1" value="console"> 
+                                            <label for="q9_opt1">console</label>
+                                            <input type="checkbox" name="q9" id="q9_opt2" value="href">
+                                            <label for="q9_opt2">href</label>
+                                            <input type="checkbox" name="q9" id="q9_opt3" value="div">
+                                            <label for="q9_opt3">div</label>
+                                            <input type="checkbox" name="q9" id="q9_opt4" value="className">
+                                            <label for="q9_opt4">className</label>
+                                            <input type="checkbox" name="q9" id="q9_opt5" value="src">
+                                            <label for="q9_opt5">src</label>
+                                            </div>
+                                         
+                                            <div class="question10">
+                                                <p>10. The following tags can be found in the head of html files</p>
+                                                <input type="checkbox" name="q10" id="q10_opt1" value="meta"> 
+                                                <label for="q10_opt1">&lt;meta&gt;</label>
+                                                <input type="checkbox" name="q10" id="q10_opt2" value="header">
+                                                <label for="q10_opt2">&lt;header&gt;</label>
+                                                <input type="checkbox" name="q10" id="q10_opt3" value="script">
+                                                <label for="q10_opt3">&lt;sript&gt;</label>
+                                                <input type="checkbox" name="q10" id="q10_opt4" value="body">
+                                                <label for="q10_opt4">&lt;bodyv&gt;</label>
+                                                <input type="checkbox" name="q10" id="q10_opt5" value="h1">
+                                                <label for="q10_opt5">&lt;h1&gt;</label>
+                                                </div>
+
+                                                <div class="structural">
+                                                    <h2>Structural</h2>
+
+                                                     <label for="q11">11. The unordered list starts with 
+                                                        <input type="text" id="q11" name="q11">
+                                                        tag.    
+                                                     </label>
+                                                
+                                                     <label for="q12">12. 
+                                                        <input type="text" id="q12" name="q12">    
+                                                    tag creates a bulleted list. 
+                                                    </label>
+                                                                              
+                                                     <label for="q13">13. 
+                                                        <input type="text" id="q13" name="q13">
+                                                    value of type attribute displays a hollow circle for an unordered list. 
+                                                    </label>
+                                                                              
+                                                    
+                                                     <label for="q14">14. To display an & on a web page,
+                                                        <input type="text" id="q14" name="q14">
+                                                        is used in the source HTML code.
+                                                     </label>
+                                                                              
+                                                    
+                                                     <label for="q15">15. 
+                                                        <input type="text" id="q15" name="q15">
+                                                        tag is used to create subscripts on a web page.
+                                                     </label>
+                                                                              
+                                                    
+                                                     <label for="q16">16. Border is an attribute of an &lt;a&gt; tag
+                                                        <input type="text" id="q16" name="q16">
+                                                     </label>
+                                                                              
+                                                    
+                                                     <label for="q17">17. The &lt;a&gt; tag is called the align tag
+                                                        <input type="text" id="q17" name="q17">
+                                                     </label>
+                                                                              
+                                                    
+                                                     <label for="q18">18. The &lt;a&gt; tag signals the beginning of the text.
+                                                        <input type="text" id="q18" name="q18">
+                                                     </label>
+                                                                              
+                                                    
+                                                     <label for="q19">19. The color of the hyperlinks in an HTML document can be changed.
+                                                        <input type="text" id="q19" name="q19">
+                                                     </label>
+                                                                              
+                                                    
+                                                     <label for="q20">20. It is possible to create a link through within current document.
+                                                        <input type="text" id="q20" name="q20">
+                                                     </label>
+                                                      
+                                                </div>
+                                                <input type="submit" id="submit" onclick="mainCalc()">
+                                               
+        </form>
+    </div>
+    </section>
+
+    <section class="css" id="css_questions">
+    <h1>CSS</h1>
+    </section>
+
+    <section class="js" id="js_questions">
+    <h1>Javascript</h1>
+    </section>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
